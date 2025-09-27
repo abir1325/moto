@@ -1,0 +1,61 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title%}
+
+{% block banner_slider %}
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{%static 'app/images/banner/Bike_3.png' %}" width="1200" height="500" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{%static 'app/images/banner/Bike_2.png' %}" width="1200" height="500" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{%static 'app/images/banner/Bike_4.png' %}" width="1200" height="500" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{%static 'app/images/banner/Bike_5.png' %}" width="1200" height="500" class="d-block w-100" alt="banner image">
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{% endblock banner_slider %}
+
+{% block main-content %}
+<div class="conatainer mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+         Cholonto--Rush appears to be a specialized online platform dedicated to on-road bicycle maintenance services, catering primarily to urban cyclists and commuters who need quick, roadside solutions for common issues like flat tires, brake adjustments, chain lubrication, or gear tuning. While specific details on the site are limited in public records, it aligns with the growing trend of mobile and digital-first bike repair networks, similar to platforms like Total Rush in Melbourne or GEARS Bike Shop, which emphasize expert mechanics for all bike types.
+
+        </p>
+
+    </div>
+    <br><br>
+    <h2 class="text-center">Key Features and Services</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">
+        Roadside Focus: The core offering is mobile service units or pop-up stations along high-traffic cycling routes, allowing users to book via the webpage for immediate interventions without shop visits. This reduces downtime for daily riders.
+        Digital Booking and Tracking: Users can schedule services through an intuitive interface, track technician ETAs in real-time, and access DIY tutorials for minor fixes, promoting self-reliance.
+        Sustainability Angle: Emphasis on eco-friendly practices, such as using biodegradable lubes and recycling parts, appeals to environmentally conscious cyclists.
+        Community Integration: The site likely includes forums or event listings for group rides and maintenance workshops, fostering a rider community.
+        </p>
+
+    </div>
+
+</div>
+<br><br>
+{% endblock main-content %}

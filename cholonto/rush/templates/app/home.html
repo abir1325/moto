@@ -1,0 +1,166 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}HOME{% endblock title%}
+
+{% block banner_slider %}
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{%static 'app/images/banner/Bike_3.png' %}" width="1200" height="500" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{%static 'app/images/banner/Bike_2.png' %}" width="1200" height="500" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{%static 'app/images/banner/Bike_4.png' %}" width="1200" height="500" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{%static 'app/images/banner/Bike_5.png' %}" width="1200" height="500" class="d-block w-100" alt="banner image">
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{% endblock banner_slider %}
+{% block information %}
+
+<div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Services</h1>
+        <small class="fs-5"> "Cholonto-Rush" appears to be a service-oriented site focused on motorcycle maintenance, created by our team named FAANA.The team members listed are Nizam Uddin Chowdhury,Asif Ahmed Abdullah, Asikuzzaman Abir, Sadia Tasnim Ananna, and Fabia Akter Borsha.The content emphasizes readiness to assist with problematic vehicles.We assure that this webpage will be your daily driver. </small>
+    </div>
+
+</div>
+{% endblock information %}
+{% block main-content %}
+<div class="container">
+    <h2 class="text-center">Daily Service Site.....</h2>
+    <br><br>
+    <div class="row container">
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+             data-wowoduration="1s" data-row-delay="0.6s"
+             style="animation-duration: 1s; animation-delay:0.6s;
+             animation-name: none;">
+            <div class="goodnesssec buttermilk s1">
+                <a href="{% url 'catagory' 'TF' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/product/Throttle Fix.png' %}" class="img-responsive" alt="">
+                        <p class="mlkpro">Throttle Fix</p>
+
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+             data-wowoduration="1s" data-row-delay="0.6s"
+             style="animation-duration: 1s; animation-delay:0.6s;
+    animation-name: none;">
+            <div class="goodnesssec buttermilk s2">
+                <a href="{% url 'catagory' 'CM' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/product/Carborator Modify.png' %}" class="img-responsive" alt="">
+                        <p class="mlkpro">Carborator-Modify</p>
+
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+             data-wowoduration="1s" data-row-delay="0.6s"
+             style="animation-duration: 1s; animation-delay:0.6s;
+    animation-name: none;">
+            <div class="goodnesssec buttermilk s3">
+                <a href="{% url 'catagory' 'CC' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/product/Clutch Change.png' %}" class="img-responsive" alt="">
+                        <p class="mlkpro">Clutch-Change</p>
+
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+  <br><br>
+    <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+         data-wowoduration="1s" data-row-delay="0.6s"
+         style="animation-duration: 1s; animation-delay:0.6s;
+    animation-name: none;">
+        <div class="goodnesssec buttermilk s1">
+            <a href="{% url 'catagory' 'TC' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/product/Tire Change.png' %}" class="img-responsive" alt="">
+                    <p class="mlkpro">Tire Change</p>
+
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+         data-wowoduration="1s" data-row-delay="0.6s"
+         style="animation-duration: 1s; animation-delay:0.6s;
+    animation-name: none;">
+        <div class="goodnesssec buttermilk s2">
+            <a href="{% url 'catagory' 'TS' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/product/Towing Service.png' %}" class="img-responsive" alt="">
+                    <p class="mlkpro">Toweing Service</p>
+
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+         data-wowoduration="1s" data-row-delay="0.6s"
+         style="animation-duration: 1s; animation-delay:0.6s;
+    animation-name: none;">
+        <div class="goodnesssec buttermilk s3">
+            <a href="{% url 'catagory' 'FE' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/product/Fuel Emergency.png' %}" class="img-responsive" alt="">
+                    <p class="mlkpro">Fuel-Emergency</p>
+
+                </div>
+            </a>
+
+         </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+<br/><br/>
+
+{% endblock main-content %}
+
