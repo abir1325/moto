@@ -34,9 +34,11 @@ urlpatterns = [
     path('profile/',views.ProfileView.as_view(),name='profile'),
     path('address/', views.ProfileView.as_view(), name='address'),
 
+
                   #login authentication
     path('registration/',views.RegistrationView.as_view() , name='registration'),
     path('accounts/login/',auth_view.LoginView.as_view(template_name='app/login.html',authentication_form=LoginForm ), name='login'),
     path('password-reset/',auth_view.PasswordResetView.as_view(template_name='app/password_reset.html',form_class=PasswordResetForm),name='password_reset'),
 
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

@@ -13,3 +13,5 @@ class CustomerModelAdmin(admin.ModelAdmin):
     list_display = ['id','user','locality','city', 'state','zipcode']
 
 
+
+

@@ -75,7 +75,6 @@ class ProfileView(View):
         else:
             messages.warning(request,"Profile not saved")
 
-
-
         return render(request,"app/profile.html",locals())
+
 
