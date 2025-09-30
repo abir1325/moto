@@ -78,3 +78,10 @@ class ProfileView(View):
         return render(request,"app/profile.html",locals())
 
 
+def address(request):
+    add=Customer.objects.filter(user=request.user)
+    return render(request,"app/address.html",locals())
+
+
+
+

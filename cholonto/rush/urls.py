@@ -32,7 +32,7 @@ urlpatterns = [
     path('catagory-title/<val>', views.CatagoryTitle.as_view() , name='catagory-title'),
     path('services-detail/<int:pk>',views.ServicesDetail.as_view() , name='services-detail'),
     path('profile/',views.ProfileView.as_view(),name='profile'),
-    path('address/', views.ProfileView.as_view(), name='address'),
+    path('address/', views.address, name='address'),
 
 
                   #login authentication
