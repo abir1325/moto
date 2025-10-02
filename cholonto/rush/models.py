@@ -35,6 +35,9 @@ class Services(models.Model):
     def __str__(self):
         return self.title
 
+
+
+
 class Customer(models.Model):
     user=models.ForeignKey(User, on_delete=models.CASCADE)
     name=models.CharField(max_length=100)
@@ -46,4 +49,30 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.name
+
+class Product(models.Model):
+    title=models.CharField(max_length=100)
+    selling_price=models.FloatField()
+    discounted_price=models.FloatField()
+    description=models.TextField()
+    composition=models.TextField(default="")
+    prodapp=models.TextField(default="")
+    category=models.CharField(choices=CATEGORY_CHOICES, max_length=2)
+    product_image=models.ImageField(upload_to="products")
+    def __str__(self):
+        return self.title
+
+class Cart(models.Model):
+    user=models.ForeignKey(User, on_delete=models.CASCADE)
+    product=models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity=models.IntegerField()
+    def __str__(self):
+        return self.product.title
+
+@property
+def total(self):
+    return self.quantity * self.product.discounted_price
+
+
+
 
